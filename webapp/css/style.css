@@ -1,0 +1,17 @@
+.customOverflowToolbar .sapMOTAPopoverFooter {
+    border-bottom: none; /* Remove the bottom border */
+}
+.customTableLayout .sapMListTblCnt {
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.customTableLayout .sapMListTblFixed {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: white; /* Adjust background as needed */
+}
+
+.customTableLayout .sapMListTblScrl {
+    overflow-x: hidden; /* Hide horizontal scrollbar for main table */
+}

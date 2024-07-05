@@ -1,0 +1,22 @@
+<mvc:View
+	controllerName="edi.controller.Upload"
+	xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	class="viewPadding">
+	<l:VerticalLayout id="_IDGenVerticalLayout1">
+		<u:FileUploader
+			id="fileUploader"
+			name="myFileUpload"
+			tooltip="Choose a file to read its content"
+			change="handleFileSelection"
+			style="Emphasized"
+			fileType="xlsx,csv"
+			placeholder="Choose a file for reading...">
+		</u:FileUploader>
+		<Button id="_IDGenButton1"
+			text="Upload File"
+			press="handleUploadPress"/>
+	</l:VerticalLayout>
+</mvc:View>

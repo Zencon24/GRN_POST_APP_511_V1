@@ -1,0 +1,36 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	xmlns:mvc="sap.ui.core.mvc"
+	class="viewPadding">    
+    <Dialog
+        id="uploadDialog"
+        title="Upload"
+        beginButton="{/beginButton}"  
+        endButton="{/endButton}"> <!-- For additional customization -->
+        
+        <content>
+            <u:FileUploader
+                id="fileUploader"
+                name="myFileUpload"
+                tooltip="Choose a file to read its content"
+                change="handleFileSelection"
+                style="Emphasized"
+                fileType="xlsx,csv"
+                placeholder="Choose a file for reading..."/>
+        </content>
+        
+        <buttons>
+            <Button
+                id="_IDGenButton1"
+                text="Upload File"
+                press="handleUploadPress"/>
+            <Button
+                id="cancelButton"
+                text="Cancel"
+                press="handleCancelPress"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>
