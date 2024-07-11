@@ -6,7 +6,7 @@
     controllerName="edi.controller.View1"
     height="100%">
 
-    <f:DynamicPage id="dynamicPage">
+    <f:DynamicPage id="dynamicPage" preserveHeaderStateOnScroll="false" showFooter="true" fitContent="true">
         <f:title>
     <f:DynamicPageTitle id="_IDGenDynamicPageTitle1">
         <f:heading>
@@ -14,18 +14,18 @@
         </f:heading>
         <f:actions>
             <OverflowToolbar id="_IDGenOverflowToolbar2" class="customOverflowToolbar">
-                <Button id="addButtonId18" text="Upload" type="Emphasized" press="onPressUploadFile" />
-                <Button id="addButtonId17" text="POST GRN" type="Emphasized" press="onPressPost" />
+                <!-- <Button id="addButtonId18" text="Upload" type="Emphasized" press="onPressUploadFile" />
+                <Button id="addButtonId17" text="POST GRN" type="Emphasized" press="onPressPost" /> -->
             </OverflowToolbar>
         </f:actions>
     </f:DynamicPageTitle>
 </f:title>
 
         <f:header>
-            <f:DynamicPageHeader id="_IDGenDynamicPageHeader1" pinnable="false">
+            <f:DynamicPageHeader id="_IDGenDynamicPageHeader1"  >
     <f:content>
         
-            <fb:FilterBar id="filterBar">
+            <!-- <fb:FilterBar id="filterBar">
                 <fb:filterGroupItems>
                     <fb:FilterGroupItem id="_IDGenFilterGroupItem2" name="Plant" label="Plant" groupName="Group1" visibleInFilterBar="true">
                         <fb:control>
@@ -38,7 +38,7 @@
                         </fb:control>
                     </fb:FilterGroupItem>
                 </fb:filterGroupItems>
-            </fb:FilterBar>
+            </fb:FilterBar> -->
 
             
     </f:content>
@@ -206,5 +206,12 @@
                 </Table>
             </ScrollContainer>
         </f:content>
+        <f:footer>
+    <OverflowToolbar id="_IDGenOverflowToolbar1" width="auto">
+        <ToolbarSpacer id="_IDGenToolbarSpacer6"/>
+        <Button id="addButtonId18" text="Upload" type="Emphasized" press="onPressUploadFile" width="6rem" /> 
+        <Button id="addButtonId17" text="POST GRN" type="Emphasized" press="onPressPost" width="6rem"/>       
+    </OverflowToolbar>
+</f:footer>
     </f:DynamicPage>
 </mvc:View>

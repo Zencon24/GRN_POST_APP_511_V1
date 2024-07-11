@@ -25,7 +25,7 @@
         }
       },
       "ediService": {
-        "uri": "EDI_C", 
+        "uri": "EDI_C",
         "type": "OData",
         "settings": {
           "odataVersion": "2.0",
@@ -154,5 +154,9 @@
       "async": true,
       "id": "App"
     }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "edi"
   }
 }

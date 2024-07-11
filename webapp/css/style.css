@@ -15,3 +15,29 @@
 .customTableLayout .sapMListTblScrl {
     overflow-x: hidden; /* Hide horizontal scrollbar for main table */
 }
+
+/* Ensure the Dynamic Page has enough height to show the footer */
+.sapFDynamicPage {
+    height: 100% !important;
+}
+
+/* Ensure the footer is positioned correctly */
+.sapFDynamicPage .sapFDynamicPageFooter {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Add some padding to the content to make space for the footer */
+.sapFDynamicPage .sapFDynamicPageContentWrapper {
+    padding-bottom: 3rem; /* Adjust this value as needed */
+}
+
+/* Ensure the footer itself is visible */
+#_IDGenOverflowToolbar1 {
+    display: flex;
+    justify-content: flex-end;
+    background: #f8f8f8; /* Optional: set a background color for better visibility */
+    padding: 1rem; /* Optional: add some padding for better appearance */
+}
